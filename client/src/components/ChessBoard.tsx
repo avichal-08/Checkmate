@@ -47,7 +47,7 @@ const ChessBoard = ({ board, socket, myColor }: {
                         }} key={i} className={`w-16 h-16 active:scale-90 active:border-2 ${(i + j) % 2 === 0 ? 'bg-green-500' : 'bg-white'}`}>
                             <div className="flex justify-center h-full">
                                 <div className="flex items-center">
-                                    {square ? <img className="w-8" src={`../../assets/${square.color === "b" ? square.type : `${square.type.toUpperCase() + "w"}`}.png`} /> : null}
+                                    {square ? <img className="w-8" src={`./${square.color === "b" ? square.type : `${square.type.toUpperCase() + "w"}`}.png`} /> : null}
                                 </div>
                             </div>
                         </div>

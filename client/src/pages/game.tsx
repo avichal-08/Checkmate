@@ -150,7 +150,7 @@ export default function Game() {
                                 setSearching(true);
                                 socket.send(JSON.stringify({ type: INIT_GAME }));
                             }}
-                            className="w-full rounded-xl bg-green-600 py-3 text-lg font-semibold hover:bg-green-700 active:scale-95"
+                            className="w-full rounded-xl bg-green-600 py-3 text-lg font-semibold cursor-pointer hover:bg-green-700 active:scale-95"
                         >
                             Play
                         </button>
@@ -158,7 +158,7 @@ export default function Game() {
 
                     {started && (
                         <button
-                            className="w-full rounded-xl border border-white/20 py-3 text-lg font-semibold hover:bg-white/10 active:scale-95"
+                            className="w-full rounded-xl border border-white/20 py-3 text-lg font-semibold cursor-pointer hover:bg-white/10 active:scale-95"
                         >
                             Resign
                         </button>
